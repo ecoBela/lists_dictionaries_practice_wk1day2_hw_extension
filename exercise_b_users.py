@@ -66,6 +66,13 @@ print(users["Avril"]["pets"][0]["species"])
 smallest_number = min(users["Erik"]["lottery_numbers"])
 print(smallest_number)
 # 6. Return an array of Avril's lottery numbers that are even
+# pseudo-code: for each item in list, if that number is divisible by 2 then add to new list, and print the new list
+even_numbers = []
+for number in users["Avril"]["lottery_numbers"]:
+  if number % 2 == 0:
+    even_numbers.append(number)
+print(even_numbers)
+
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 # 8. Change Erik's hometown to Edinburgh
 # 9. Add a pet dog to Erik called "Fluffy"
